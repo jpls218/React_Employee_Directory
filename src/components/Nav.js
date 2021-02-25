@@ -1,23 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react';
+import SearchBox from "./SearchBox";
+import "../styles/Nav.css"
 
-export default class SearchBar extends Component {
-    render() {
-        return (
-            <div>
-                 
-                <form className="form" id="addItemForm">
-                    <input
-                    type="text"
-                    className="input"
-                    id="addInput"
-                    placeholder="Search for employee"
-                    />
-                    <button className="button is-info" onClick={this.addItem}>
-                    Search
-                    </button>
-                </form>
-    
+function Nav({handleSearchChange}) {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div className="search-area col-4">
+                <SearchBox handleSearchChange={handleSearchChange}/>
             </div>
-        )   
-    }
+        </nav>
+    );
 }
+export default Nav;

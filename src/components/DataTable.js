@@ -24,7 +24,10 @@ function DataTable({headings, users, handleSort}){
                         })}
                     </tr>
                 </thead>
+                        <DataBody users={users} />
             </table>
         </div>
     )
 }
+
+export default DataTable;
