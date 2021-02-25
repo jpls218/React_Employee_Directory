@@ -55,7 +55,7 @@ export default class DataArea extends Component {
                 } else if (heading ==="name"){
                     return b[heading].first.localeCompare(a[heading].first);
                 } else {
-                return b[heading]-  a[heading];
+                return b[heading] -  a[heading];
                 }
             }
                 

@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import DataBody from './components/DataBody'
+import React from 'react'
+import DataBody from './DataBody'
 
 function DataTable({headings, users, handleSort}){
     return (
         <div className="datatable mt-5">
-            <table id="table" className="talbe table-striped talbe-hover">
+            <table id="table" className="table table-striped table-hover">
                 <thead>
                     <tr>
                         {headings.map(({name, width}) => {
@@ -24,7 +24,7 @@ function DataTable({headings, users, handleSort}){
                         })}
                     </tr>
                 </thead>
-                        <DataBody users={users} />
+                    <DataBody users={users} />
             </table>
         </div>
     )

@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export default class SearchBox extends Component {
-    render() {
-        return (
-            <div>  
-                <form className="form" id="addItemForm">
-                    <input
-                    type="text"
-                    className="input"
-                    id="addInput"
-                    placeholder="Search for employee"
-                    />
-                    <button className="button is-info" onClick={this.addItem}>
+const SearchBox = ({handleSearchChange}) => {
+    return (
+        <div className="searchbox">
+            <form className="form-inline">
+                <input
+                    className="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    onChange={e => handleSearchChange(e)}
+                />
+                <button className="btn my-2 my-sm-0" type="submit">
                     Search
-                    </button>
-                </form>
-            </div>
-        )   
-    }
+                 </button>
+            </form>
+        </div>
+    );
 }
+export default SearchBox;
