@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import '../styles/SearchBox.css'
 
 const SearchBox = ({handleSearchChange}) => {
     return (
@@ -11,7 +12,7 @@ const SearchBox = ({handleSearchChange}) => {
                     aria-label="Search"
                     onChange={e => handleSearchChange(e)}
                 />
-                <button className="btn my-2 my-sm-0" type="submit">
+                <button id="search-button" className="btn my-2 my-sm-0" type="submit">
                     Search
                  </button>
             </form>
