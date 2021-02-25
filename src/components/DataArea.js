@@ -72,7 +72,7 @@ export default class DataArea extends Component {
         const filteredList = this.state.users.filter(item => {
             let values = Object.values(item)
                 .join("")
-                .tolowerCase();
+                .toLowerCase();
             return values.indexOf(filter.toLowerCase()) !== -1;
         });
         this.setState ({ filteredUsers: filteredList });
