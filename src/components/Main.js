@@ -6,8 +6,7 @@ function Main(){
         <div>
             <DataArea />
         </div>
-    )   
-    
+    )    
 }
 
 export default Main;
