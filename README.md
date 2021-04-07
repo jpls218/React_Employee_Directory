@@ -1,15 +1,16 @@
 # React_Employee_Directory
-An employee directory that the user can search for individual employees.
   ## Description
   ​
   An employee directory that the user can search for individual employees.
+
+  ## Deployed Link
+
+  [React_Employee_Directory](https://jpls218.github.io/React_Employee_Directory/)
   ​
   ## Table of Contents 
-  ​
   * [Questions](#questions)
 
   * [Screenshot](#screenshot)
-
 
   ## Questions
   ​
