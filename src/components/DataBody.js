@@ -3,7 +3,6 @@ import React from 'react'
 function DataBody({users}) {
     console.log(users)
     function formatDate(date){
-
         const dateArray = date.split("-");
         const year = dateArray[0];
         const month = dateArray[1];
@@ -40,11 +39,9 @@ function DataBody({users}) {
                         {formatDate(dob.date)}
                     </td>
                 </tr>)
-            })
-            
+            })           
         )  :  (
-            <></>
-    
+            <></>   
         )}
         </tbody>
     );
