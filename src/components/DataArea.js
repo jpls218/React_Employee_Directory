@@ -31,7 +31,6 @@ export default class DataArea extends Component {
                 order: "descend"
             })
         }
-
         const compareFnc = (a, b) => {
             if (this.state.order === "ascend") {
                 // account for missing values
@@ -93,8 +92,7 @@ export default class DataArea extends Component {
                         users={this.state.filteredUsers}
                         handleSort={this.handleSort}
                     />
-               </div>
-            
+               </div>          
             </>
         )   
     }
