@@ -19,4 +19,5 @@ const SearchBox = ({handleSearchChange}) => {
         </div>
     );
 }
+
 export default SearchBox;
